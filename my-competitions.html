@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mis competencias</title>
+
+        <link rel="stylesheet" href="styles/common.css" />
+    </head>
+
+    <body>
+        <header></header>
+        <main>
+            <div id="new-competition">
+                <h3>Crear competencia</h3>
+                <hr />
+
+                <input
+                    type="radio"
+                    id="current"
+                    name="use-clan"
+                    value="current"
+                />
+                <label for="male">Clan actual</label><br />
+                <input
+                    type="radio"
+                    id="search"
+                    name="use-clan"
+                    value="search"
+                />
+                <label for="female">Buscar clan</label>
+                <input type="text" id="clan-to-search" />
+                <button id="clan-search">Buscar</button>
+                <br />
+
+                <label for="name">Nombre</label>
+                <input id="name" name="name" />
+
+                <label for="type">Tipo</label>
+                <select id="type" name="type">
+                    <option value="tournament">Torneo</option>
+                    <option value="league">Liga</option>
+                </select>
+
+                <div id="players">
+                    <input id="player-to-search" />
+                    <button id="player-search">Buscar</button>
+                    <div id="players-search-list">
+                        <div id="player-search-item">d</div>
+                        <div id="player-search-item">e</div>
+                        <div id="player-search-item">f</div>
+                    </div>
+
+                    <div id="players-list">
+                        <div id="player-item">a</div>
+                        <div id="player-item">b</div>
+                        <div id="player-item">c</div>
+                    </div>
+                </div>
+
+                <input
+                    type="radio"
+                    id="public"
+                    name="visibility"
+                    value="public"
+                />
+                <label for="male">Público</label><br />
+                <input
+                    type="radio"
+                    id="private"
+                    name="visibility"
+                    value="private"
+                />
+                <label for="female">Privado</label>
+            </div>
+        </main>
+        <script src="./scripts/my-competitions.js"></script>
+    </body>
+</html>
